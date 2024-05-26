@@ -11,7 +11,7 @@ function App() {
     setDate(new Date())
   }, 1);
 
-  const wow = 0
+
 
   const hour1 = () => {
     const h = date.getHours()
