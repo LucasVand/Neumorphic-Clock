@@ -23,6 +23,7 @@ function Bar(props: barProp) {
     return (
         <>
             <div className='barCont'>
+
                 <div className='circle'></div>
                 <div className='mainBar' style={{ top: `${51.1 - props.selectedNumber * 4}%` }}>
                     {text}
