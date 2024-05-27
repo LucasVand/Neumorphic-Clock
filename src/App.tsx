@@ -4,6 +4,7 @@ import './App.css'
 import Bar from './Bar/Bar'
 import Colon from './Colon/Colon'
 import AMPM from './AM/PM/ampm'
+import './normalize.css'
 
 function App() {
   const [date, setDate] = useState(new Date())
@@ -18,7 +19,7 @@ function App() {
     }
 
     const n = Number(h.toString()[1] == null ? 0 : h.toString()[0])
-    return n
+    return 0
   }
   const hour2 = () => {
     var h = date.getHours()
