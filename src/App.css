@@ -74,3 +74,9 @@
   display: flex;
   align-items: center;
 }
+
+@media (prefers-color-scheme: dark) {
+  .bg {
+    background: linear-gradient(-45deg, rgb(32, 32, 32), rgb(58, 58, 58));
+  }
+}

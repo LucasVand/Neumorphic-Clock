@@ -66,3 +66,23 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (prefers-color-scheme: dark) {
+    .apCenter {
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761),
+            -3px -3px 3px rgba(61, 61, 61, 0.412);
+
+        background-color: rgba(59, 59, 59, 0.8);
+    }
+
+    .apText {
+        color: black;
+    }
+
+    .apBG {
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761),
+            -3px -3px 3px rgba(61, 61, 61, 0.412);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+}
