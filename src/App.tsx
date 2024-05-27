@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Bar from './Bar/Bar'
 import Colon from './Colon/Colon'
+import AMPM from './AM/PM/ampm'
 
 function App() {
   const [date, setDate] = useState(new Date())
@@ -52,6 +53,13 @@ function App() {
     return n
   }
 
+  const AM = () => {
+    const h = date.getDate()
+
+    const a = h > 12 ? true : false
+    return a
+  }
+
 
   return (
     <>
@@ -71,6 +79,9 @@ function App() {
 
           <Bar number={5} selectedNumber={second1()}></Bar>
           <Bar number={9} selectedNumber={second2()}></Bar>
+
+          <AMPM AM={AM()}></AMPM>
+
           <div className='spacer'></div>
 
         </div>

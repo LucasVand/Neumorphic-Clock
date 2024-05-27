@@ -12,7 +12,7 @@
 }
 
 .outer {
-    background-color: rgba(144, 144, 144, 0.8);
+    background-color: rgba(144, 144, 144, 0.444);
     backdrop-filter: blur(10px);
 
     box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.761),
@@ -30,8 +30,6 @@
 }
 
 .inner {
-
-
     width: 15%;
     min-width: 15%;
     aspect-ratio: 1/1;
