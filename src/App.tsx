@@ -11,7 +11,8 @@ function App() {
 
   setTimeout(() => {
     setDate(new Date())
-  }, 1);
+    console.log("Timer")
+  }, 100);
   const hour1 = () => {
     var h = date.getHours()
     if (h > 12) {
@@ -64,7 +65,7 @@ function App() {
 
   return (
     <>
-      <div className='bg'>
+      <div className='bg' data-theme={'purple'}>
         <div className='cont'>
           <div className='spacer'></div>
 

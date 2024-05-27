@@ -6,6 +6,36 @@
   user-select: none;
 }
 
+:root {
+  --bgTop: white;
+  --bgBottom: grey;
+  --bottomShadow: rgba(128, 128, 128, 0.761);
+  --topShadow: rgba(255, 255, 255, 0.412);
+  --barBackgroundColor: rgb(255, 255, 255, 0.10);
+  --primaryColor: white;
+  --circleBg: rgba(125, 125, 125, 0.8);
+}
+
+[data-theme='dark'] {
+  --bgTop: rgb(58, 58, 58);
+  --bgBottom: rgb(32, 32, 32);
+  --bottomShadow: rgba(0, 0, 0, 0.761);
+  --topShadow: rgba(61, 61, 61, 0.412);
+  --barBackgroundColor: rgba(0, 0, 0, 0.1);
+  --primaryColor: black;
+  --circleBg: rgba(59, 59, 59, 0.8);
+}
+
+[data-theme='purple'] {
+  --bgTop: rgb(215, 177, 234);
+  --bgBottom: rgb(111, 51, 141);
+  --bottomShadow: rgba(75, 48, 79, 0.761);
+  --topShadow: rgba(190, 143, 194, 0.412);
+  --barBackgroundColor: rgba(120, 95, 125, 0.1);
+  --primaryColor: rgb(255, 255, 255);
+  --circleBg: rgba(121, 63, 141, 0.8);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -70,13 +100,7 @@
 
   left: 0;
   top: 0;
-  background: linear-gradient(-45deg, grey, rgb(255, 255, 255));
+  background: linear-gradient(-45deg, var(--bgBottom), var(--bgTop));
   display: flex;
   align-items: center;
-}
-
-@media (prefers-color-scheme: dark) {
-  .bg {
-    background: linear-gradient(-45deg, rgb(32, 32, 32), rgb(58, 58, 58));
-  }
 }

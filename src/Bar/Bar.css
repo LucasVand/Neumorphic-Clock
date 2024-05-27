@@ -1,11 +1,11 @@
 .mainBar {
     width: 40%;
 
-    box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.761),
-        -3px -3px 3px rgba(255, 255, 255, 0.412);
+    box-shadow: 3px 3px 5px var(--bottomShadow),
+        -3px -3px 3px var(--topShadow);
     margin: 2%;
 
-    background-color: rgb(255, 255, 255, 0.10);
+    background-color: var(--barBackgroundColor);
 
     border-radius: 15%/1%;
 
@@ -24,7 +24,7 @@
 }
 
 .barText {
-    color: white;
+    color: var(--primaryColor);
     margin: 30%;
     transition: scale 0.5s;
     font-size: 1.15vw;
@@ -45,11 +45,11 @@
     left: 23%;
 
 
-    background-color: rgba(125, 125, 125, 0.8);
+    background-color: var(--circleBg);
     backdrop-filter: blur(10px);
 
-    box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.761),
-        -3px -3px 3px rgba(255, 255, 255, 0.412);
+    box-shadow: 3px 3px 5px var(--bottomShadow),
+        -3px -3px 3px var(--topShadow);
 
     width: 60%;
     aspect-ratio: 1/1;
@@ -59,23 +59,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-@media (prefers-color-scheme: dark) {
-    .circle {
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761),
-            -3px -3px 3px rgba(61, 61, 61, 0.412);
-
-        background-color: rgba(59, 59, 59, 0.8);
-    }
-
-    .barText {
-        color: black;
-    }
-
-    .mainBar {
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761),
-            -3px -3px 3px rgba(61, 61, 61, 0.412);
-        background-color: rgba(0, 0, 0, 0.1);
-    }
 }
