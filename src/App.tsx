@@ -11,12 +11,19 @@ function App() {
     setDate(new Date())
   }, 1);
   const hour1 = () => {
-    const h = date.getHours()
+    var h = date.getHours()
+    if (h > 12) {
+      h -= h > 12 ? 12 : 0
+    }
+
     const n = Number(h.toString()[1] == null ? 0 : h.toString()[0])
     return n
   }
   const hour2 = () => {
-    const h = date.getHours()
+    var h = date.getHours()
+    if (h > 12) {
+      h -= h > 12 ? 12 : 0
+    }
     const n = Number(h.toString()[1] == null ? h.toString()[0] : h.toString()[1])
     return n
   }
