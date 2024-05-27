@@ -19,7 +19,7 @@ function App() {
     }
 
     const n = Number(h.toString()[1] == null ? 0 : h.toString()[0])
-    return 0
+    return n
   }
   const hour2 = () => {
     var h = date.getHours()
