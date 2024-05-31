@@ -1,0 +1,32 @@
+.themeButton {
+    background-color: var(--barBackgroundColor);
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px var(--bottomShadow),
+        -1px -1px 2px var(--topShadow);
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.innerButton {
+    background-color: var(--accentColor);
+    height: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+}
+
+.buttonCont {
+    display: flex;
+
+    align-items: center;
+    position: absolute;
+    top: 93%;
+    height: 5%;
+
+}

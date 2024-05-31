@@ -14,6 +14,18 @@
   --barBackgroundColor: rgb(255, 255, 255, 0.10);
   --primaryColor: white;
   --circleBg: rgba(125, 125, 125, 0.8);
+  --accentColor: white;
+}
+
+[data-theme='light'] {
+  --bgTop: white;
+  --bgBottom: grey;
+  --bottomShadow: rgba(128, 128, 128, 0.761);
+  --topShadow: rgba(255, 255, 255, 0.412);
+  --barBackgroundColor: rgb(255, 255, 255, 0.10);
+  --primaryColor: white;
+  --circleBg: rgba(125, 125, 125, 0.8);
+  --accentColor: white;
 }
 
 [data-theme='dark'] {
@@ -24,16 +36,18 @@
   --barBackgroundColor: rgba(0, 0, 0, 0.1);
   --primaryColor: black;
   --circleBg: rgba(59, 59, 59, 0.8);
+  --accentColor: black;
 }
 
 [data-theme='purple'] {
-  --bgTop: rgb(215, 177, 234);
+  --bgTop: rgb(201, 166, 219);
   --bgBottom: rgb(111, 51, 141);
   --bottomShadow: rgba(75, 48, 79, 0.761);
   --topShadow: rgba(190, 143, 194, 0.412);
   --barBackgroundColor: rgba(120, 95, 125, 0.1);
   --primaryColor: rgb(255, 255, 255);
   --circleBg: rgba(121, 63, 141, 0.8);
+  --accentColor: purple;
 }
 
 .logo {

@@ -5,6 +5,7 @@ import Bar from './Bar/Bar'
 import Colon from './Colon/Colon'
 import AMPM from './AM/PM/ampm'
 import './normalize.css'
+import ColorButtons from './ColorButtons/ColorButtons'
 
 function App() {
   const [date, setDate] = useState(new Date())
@@ -62,10 +63,12 @@ function App() {
     return a
   }
 
+  const [theme, setTheme] = useState('light')
+
 
   return (
     <>
-      <div className='bg' data-theme={'purple'}>
+      <div className='bg' data-theme={theme}>
         <div className='cont'>
           <div className='spacer'></div>
 
@@ -88,7 +91,7 @@ function App() {
 
         </div>
 
-
+        <ColorButtons theme={theme} setTheme={setTheme}></ColorButtons>
       </div>
     </>
   )
