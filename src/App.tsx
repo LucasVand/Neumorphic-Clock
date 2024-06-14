@@ -8,6 +8,7 @@ import './normalize.css'
 
 function App() {
   const [date, setDate] = useState(new Date())
+  var theme = 'light'
 
   setTimeout(() => {
     setDate(new Date())
@@ -62,10 +63,13 @@ function App() {
     return a
   }
 
-
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // dark mode
+    theme = 'dark'
+  }
   return (
     <>
-      <div className='bg' data-theme={'purple'}>
+      <div className='bg' data-theme={theme}>
         <div className='cont'>
           <div className='spacer'></div>
 
