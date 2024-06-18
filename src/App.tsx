@@ -71,8 +71,6 @@ function App() {
     <>
       <div className='bg' data-theme={theme}>
         <div className='cont'>
-          <div className='spacer'></div>
-
           <Bar number={2} selectedNumber={hour1()}></Bar>
           <Bar number={9} selectedNumber={hour2()}></Bar>
 
@@ -87,8 +85,6 @@ function App() {
           <Bar number={9} selectedNumber={second2()}></Bar>
 
           <AMPM AM={AM()}></AMPM>
-
-          <div className='spacer'></div>
 
         </div>
 
